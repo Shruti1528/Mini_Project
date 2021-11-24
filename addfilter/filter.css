@@ -12,7 +12,7 @@ body
 {
     width:59%;
     height: 100vh;
-    background-color:gray;
+    background-image:linear-gradient(to right,#544a7d,#3369a7);
     float:left;
 }
 #box2
@@ -28,7 +28,7 @@ body
     margin-left: 180px;
     width:500px;
     height: 400px;
-    background-color:cornsilk;
+    background-color:lightslategrey;
 }
 #para1
 {
@@ -61,9 +61,9 @@ h2
 {
     text-align: center;
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 2px 2px darkslateblue;
+    text-shadow: 2px 2px 5px white;
 }
 #reset
 {

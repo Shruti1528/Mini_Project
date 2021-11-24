@@ -5,7 +5,8 @@ var nored=null;
 var gray=null;
 var rainbow=null;
 var noyellow=null;
-var makewindow=null;
+var noblue=null;
+var redImage=null;
 
 function setimg()
 {
@@ -17,7 +18,8 @@ function setimg()
     nored=new SimpleImage(fileInput);
     rainbow=new SimpleImage(fileInput);
     noyellow=new SimpleImage(fileInput);
-    makewindow=new SimpleImage(fileInput);
+    noblue=new SimpleImage(fileInput);
+    redImage=new SimpleImage(fileInput);
     img.drawTo(canvas);
 }
 
@@ -159,23 +161,38 @@ function noYellow()
     var canvas=document.getElementById("pic1");
     noyellow.drawTo(canvas);
 }
-
-function makeWindow()
+function noBlue()
 {
-    for( var pixel of makewindow.values())
+  for( var pixel of noblue.values())
+  {
+    pixel.setBlue(0);
+  }
+  var canvas=document.getElementById("pic1");
+  noblue.drawTo(canvas);
+
+}
+
+function makeRed()
+{
+    var threshold = 128;
+    for(var pixel of redImage.values()) 
     {
-        var h=pixel.height;
-        var d=h/3;
-        var y=pixel.getY();
-        if(y==d || y==d*2 || y==d*3)
+        var avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue()) / 3;
+        if(avg > threshold) 
         {
-            pixel.setRed(0);
-            pixel.setGreen(0);
-            pixel.setBlue(0);
+          pixel.setRed(255);
+          pixel.setGreen(2 * avg - 255);
+          pixel.setBlue(2 * avg - 255);
+        }
+        else 
+        {
+          pixel.setRed(2 * avg);
+          pixel.setGreen(0);
+          pixel.setBlue(0);
         }
     }
     var canvas=document.getElementById("pic1");
-    makewindow.drawTo(canvas);
+    redImage.drawTo(canvas);
 }
 function reset() 
 {

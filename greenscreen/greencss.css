@@ -24,6 +24,10 @@ canvas
     color:honeydew;
     font-size:25px;
 }
+#pic1 , #pic2 , #pic3
+{
+    box-shadow: 2px 2px 2px 3px rgb(72, 34, 178);
+}
 #back
 {
     display:inline;
