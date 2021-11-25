@@ -4,55 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background-image: linear-gradient(to right,grey,rgb(88, 119, 131),grey);
+            background-image: url(./body_bg2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .landing
+        {
+            width: 900px;
+            height: 550px;
+            background-color: beige;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        }
+        .nav ul
+        {
+            list-style-type: none; 
+            float: right;  
+        }
+        .nav ul li
+        {
+            display: inline-block;
+            margin: 20px;
+            padding: 12px;
+            font-size: 18px;
+        }
+        ul li:hover
+        {
+            background-color:darkolivegreen;
+            color:floralwhite;
+        }
+        h1
+        {
+            font-family:'Indie Flower', cursive;
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+        }
+        .center
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        i
+        {
+            float: right;
+            position:relative;
+            bottom:230px;
+            right: 40px;
+            color:cadetblue;
+        }
+        i:hover
+        {
+            color:coral;
+        }
+        .landing:hover
+        {
+            width: 1000px;
+            box-shadow: 2px 5px 5px 5px rgba(24, 24, 92, 0.582);
+            
+        }
+    </style>
 </head>
 <body>
-    <div class="heading">
-        <marquee  behavior="alternate" direction="right" scrollamount="20" >AUTOMATONUS</marquee>
-    </div>
-    <div class="upperbox">
-        <div class="lowerbox">
-            <div class="container">
-
-                <div class="box1">
-                    <div class="btn1">
-                        <button onclick="window.location.href='./greenscreen/green.html'">Green Screen</button>
-                    </div>
-                    <div class="para1">
-                       This will help you change your green screen background image to your desired background image.
-                    </div>
-                </div>
-                   
-                <div class="box2"> 
-                    <div class="para2">
-                        This will help you apply various filters on your picture.
-                    </div>
-                    <div class="btn2">
-                        <button onclick="window.location.href='./addfilter/filter.html'">Filters</button>
-                    </div>
-                </div>
-                   
-                <div class="box3">
-                    <div class="btn3">
-                        <button >OCR</button>
-                    </div>
-                    <div class="para3">
-                        Optical Character Recognition will help you convert image to a pdf document.
-                    </div>
-                </div>
-
-                <div class="box4">
-                    <div class="para4">
-                        This will help you convert your text into speech.
-                    </div>
-                    <div class="btn4">
-                        <button onclick="window.location.href='./text_speech/text_sp.html'">Text to Speech</button>
-                    </div>
-                    
-                </div>         
+    <div class="landing">
+        <div class="nav">
+            <img src="./logo_automatonus-removebg-preview.png" width="60px" height="60px" style="padding: 20px;padding-top: 10px;"> 
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
             </div>
-        </div>
+            <hr>
+            <hr style="border:1px solid purple;">
+            <h1>We make Creative</h1>
+            <img class="center" src="./img.jpg" width="200px" height="200px">
+            <h1>Things, everyday.</h1>
+            <a href="./main.html"><i class="fa fa-chevron-circle-right fa-5x"></i></a>
     </div>
 </body>
 </html>
