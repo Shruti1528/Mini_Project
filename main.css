@@ -22,7 +22,7 @@
 body
 {
     
-    background-image: url("./body_back.gif");
+    background-image: url("./images/body_back.gif");
     background-repeat: no-repeat;
     background-size: cover;
 }
