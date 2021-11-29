@@ -50,6 +50,8 @@ button
     border-radius: 30px;
     height: 90px;
     font-family:monospace;
+    background-color:burlywood;
+    box-shadow: 2px 2px 2px  white;
 }
 button:hover
 {
@@ -64,6 +66,8 @@ h2
     font-size: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-shadow: 2px 2px 5px white;
+    display: inline;
+    margin-left: 200px;
 }
 #reset
 {
